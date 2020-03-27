@@ -11,10 +11,10 @@ before_install:
 
 script:
   - make lint test
-  - docker build -t classik19881/ci_cd .
+  - docker build -t classik19881/simple_service .
 
 deploy:
   provider: script
-  script: bash docker_push
+  script: bash .docker_push
   on:
     branch: master

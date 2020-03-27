@@ -3,7 +3,7 @@ package main
 import "testing"
 
 func TestRun(t *testing.T) {
-	expected := "CI/CD tools"
+	expected := "Setup Travis CI for Golang project"
 	got := run()
 	if expected != got {
 		t.Fatalf("expected %v got %v", expected, got)

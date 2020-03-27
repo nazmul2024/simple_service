@@ -7,5 +7,5 @@ func main() {
 }
 
 func run() string {
-	return "CI/CD tools"
+	return "Setup Travis CI for Golang project"
 }
