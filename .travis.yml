@@ -1,5 +1,8 @@
 language: go
 
+service:
+  - docker
+
 go:
   - 1.x
 
@@ -8,3 +11,5 @@ before_install:
 
 script:
   - make lint test
+  - docker build -t valentyn88/ci_cd .
+  - docker run --rm valentyn88/ci_cd
