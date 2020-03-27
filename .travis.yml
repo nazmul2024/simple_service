@@ -11,5 +11,10 @@ before_install:
 
 script:
   - make lint test
-  - docker build -t valentyn88/ci_cd .
-  - docker run --rm valentyn88/ci_cd
+  - docker build -t classik19881/ci_cd .
+
+deploy:
+  provider: script
+  script: bash docker_push
+  on:
+    branch: master
