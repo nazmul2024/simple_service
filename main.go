@@ -4,6 +4,7 @@ import "fmt"
 
 func main() {
 	fmt.Println(run())
+	fmt.Println("This is First Travis Build")
 }
 
 func run() string {
